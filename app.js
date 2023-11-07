@@ -8,17 +8,17 @@ let aboutCards = [
     { // history
         name:'history',
         image:'./history.webp',
-        details:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  perferendis ipsam quibusdam earum architecto? Distinctio, id ea?',
+        details:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  perferendis ipsam quibusdam earum architecto? Distinctio, id ea?',
     },
     { // vision
         name:'vision',
         image:'./vision.jpg',
-        details:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  perferendis ipsam quibusdam earum architecto? Distinctio, id ea?',
+        details:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  perferendis ipsam quibusdam earum architecto? Distinctio, id ea?',
     },
     { // goals
         name:'goals',
         image:'./goals.jpg',
-        details:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  perferendis ipsam quibusdam earum architecto? Distinctio, id ea?',
+        details:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores ducimus  suscipit aliquam, illo itaque odit eveniet distinctio iure quaerat maxime consequatur  perferendis ipsam quibusdam earum architecto? Distinctio, id ea?',
     }
 ]
 
@@ -34,10 +34,10 @@ function btn(btnName) {
 
     if (filtration == "") {
         myMainRow.innerHTML = 
-        `<div class="col-md-6 col-12">
-                <img class="w-100" src="${aboutCards[0].image}">
+        `<div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                <img class="w-100 h-75 " src="${aboutCards[0].image}">
             </div>
-            <div class="col-md-6 col-12 m-auto">
+            <div class="col-lg-6 col-12 m-auto">
                 <div class="row">
                     <div class="col-4 ">
                         <button onclick="btn('history')" class="w-100 history">history</button>
@@ -61,10 +61,10 @@ function btn(btnName) {
 
     filtration.forEach( (filterCard) => {
         myMainRow.innerHTML = 
-        `<div class="col-md-6 col-12">
-        <img class="w-100" src="${filterCard.image}">
+        `<div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+        <img class="w-100  h-75 " src="${filterCard.image}">
     </div>
-    <div class="col-md-6 col-12 m-auto">
+    <div class="col-lg-6 col-12 m-auto">
         <div class="row">
             <div class="col-4 ">
                 <button onclick="btn('history')" class="w-100 history">history</button>
